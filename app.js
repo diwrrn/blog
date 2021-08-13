@@ -13,8 +13,11 @@ var async = require('async');
 
 const app = express();
 
+// mongodb+srv://diween:<password>@cluster0.iq9bk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+// Diween2001
+
 //CONNETCT MONGOOSE TO MONGODB
-mongoose.connect("mongodb://localhost:27017/diweenDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 //SETTING EJS VIEW ENGINE
 app.set('view engine', 'ejs');
 //REQ.BODY.....
