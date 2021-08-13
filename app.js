@@ -321,7 +321,7 @@ app.get('/all', (req, res)=>{
 
 
 //LISTEN PORT
-app.listen(app.listen(process.env.PORT, '0.0.0.0', ()=>{
+app.listen(process.env.PORT, '0.0.0.0', ()=>{
     console.log('Server is live!')
-} ))
+})
 
