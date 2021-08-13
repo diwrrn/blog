@@ -76,7 +76,7 @@ var upload = multer({
 // HOME VIEW 
 
 
-app.get('*', (req, res)=>{
+app.get('/', (req, res)=>{
     async.series([
         (callback)=>{
             return Blogdata.find({}).exec(callback)
