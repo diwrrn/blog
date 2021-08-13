@@ -1,0 +1,64 @@
+<%- include("partials/head") %> 
+
+<form action="/create" method="POST" enctype = "multipart/form-data">
+    <div class="form-group-login">
+        <label for="title">Title</label>
+        <input type="text" name="tit" id="title">
+    </div>
+    <div class="form-group-login text-create">
+        <label for="desc">Description</label>
+        <textarea type="text" name="des"  id="desc" dir="rtl"></textarea>
+    </div>
+    <div class="form-group-login">
+        <input type="file" name="myFile" class="fileForm">
+    </div>
+    <div class="form-group-login">
+        <label for="params">Params</label>
+        <input type="text" name="param"  id="params">
+    </div>
+    <div class="form-group-login">
+        <label for="time">Reading Time:</label>
+        <input type="text" name="time"  id="time">
+    </div>
+    <div class="form-group-login">
+        <label for="author">Author</label>
+        <select name="author"  id="author">
+            <% dataU.forEach((datasU)=>{ %>
+               <option value="<%=datasU.auth%>"><%=datasU.auth%></option>
+                <% }) %> 
+        </select>
+    </div>
+    <div class="form-group-login">
+        <label for="topic">Topic</label>
+        <select name="topic"  id="topic">
+               <option value="projects">projects</option>
+               <option value="blockchain">blockchain</option>
+               <option value="start">start</option>
+        </select>
+    </div>
+    
+    <button type="submit" class="btn-form-login">Submit</button>
+</form>
+
+<div class="edit-group">
+    <% data.slice().reverse().forEach((datas)=>{ %>
+        <div class="create-contain">
+            <div class="create-edit-photo">
+                <img src="uploads/<%= datas.img %>" alt="" srcset="" style="height: 100%; width: 100%;" >
+            </div>
+            <h1 class="create-edit-title"><%= datas.title %></h1>
+            <p class="create-edit-text">....<%= datas.description.substring(1,50)%></p>
+            <div class="create-edit-btns">
+                <form action="/edit" method="POST">
+                    <button class="btn-edit" value="<%= datas._id %>" name="editBtn" style="color: white; background-color: green;">دەستکاری</button>
+                </form>
+                <form action="/delete" method="POST">
+                    <button class="btn-edit" value="<%= datas._id %>" name="dltBtn" style="color: white; background-color: red;">ڕەشکردنەوە</button>
+                </form>
+            </div>
+        </div>
+    <% }) %>
+
+</div>
+
+<%- include("partials/foot") %> 

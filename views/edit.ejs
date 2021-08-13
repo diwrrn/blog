@@ -1,0 +1,16 @@
+<%- include("partials/head") %> 
+
+<form action="/editdone" method="POST" >
+    <div class="form-group-login">
+        <label for="title">Title</label>
+        <input type="text" name="tit" id="title" value="<%= data.title %>">
+    </div>
+    <div class="form-group-login text-create">
+        <label for="desc">Description</label>
+        <textarea type="text" name="des"  id="desc" value="<%= data.description %> "></textarea>
+    </div>
+
+    <button type="submit" class="btn-form-login" name="btnIdd" value="<%=data._id %>">Submit</button>
+</form>
+
+<%- include("partials/foot") %> 

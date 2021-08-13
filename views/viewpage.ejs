@@ -1,0 +1,25 @@
+<%- include("partials/head") %> 
+
+
+<div class="viewpage">
+    <h1 class="viewpage-header"><%=data.title %> </h1>
+    <p class="blog-info">نووسەر : <%= data.author %> </p>
+    <p class="blog-info">بەروار : <%= data.date %> </p>
+    <p class="blog-info">کاتی پێویست بۆ خوێندنەوە :<%=data.readingTime%></p>
+    <img src="/uploads/<%= data.img %> " alt="" class="viewpage-img" style="height: 40rem; width: 100%;">
+    <p class="viewpage-desc"><%=data.description  %> </p>
+</div>
+<!-- 
+<div class="other-posts">
+    <% dataAll.forEach((datas)=>{ %>
+        <div class="contain" onclick="location.href='/p/<%=datas.param %>'" style="cursor: pointer;">
+            <div class="header-photo-view">
+                <img src="uploads/<%= datas.img %>" alt="" srcset="" style="width: 100%; height: 100%;">
+            </div>
+            <h1 class="header-title">...<%= datas.title.substring(1,30) %></h1>
+            <p class="header-text"><%= datas.description.substring(1,50)%> <a href="/p/<%= datas.param %> "> .... زیاتر بخوێنەوە</a></p>
+        </div>    
+   `<% }) %>
+</div> -->
+
+<%- include("partials/foot") %> 

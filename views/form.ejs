@@ -1,0 +1,23 @@
+<%- include('partials/head') %> 
+</div>
+
+<div class="form-container">
+    <p class="form-title">:بۆ پەیوەندی کردن</p>
+    <form action="/form" method="POST" style="text-align: center;" >
+        <div class="form-group">
+            <label for="name">:ناو</label>
+            <input type="text" name="formName" placeholder="" id="name" dir="rtl">
+        </div>
+        <div class="form-group">
+            <label for="mail">:ئیمەیڵ</label>
+            <input type="email" name="formEmail" placeholder="" id="mail" dir="rtl">
+        </div>
+        <div class="form-group">
+            <label for="msg">:بابەت</label>
+            <textarea name="formMessage" id="msg" cols="30" rows="30"   placeholder="" dir="rtl"></textarea>
+        </div>
+            <input type="submit" class="btn-form" value="ناردن">
+    </form>
+</div>
+
+<%- include('partials/foot') %> 

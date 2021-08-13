@@ -1,0 +1,96 @@
+<%- include('partials/head') %> 
+
+
+        <div class="intro-box">
+            <div class="box-img">
+                 <img src="uploads/webpp.jpg" alt="" style="height: 100%; width: 100%;">
+            </div>
+            <div class="box-text">
+                <p class="box-text1">- لەگەڵ کریپتۆکوردی خۆت فێری زانستی بلۆکچەین بکە -</p>
+            </div>
+        </div>
+    
+
+    <div class="container-top">
+        <h1 class="top-cont">دوایین بابەت</h1>
+        <a href="/start" class="viewmore">زیاتر</a>
+    </div>
+
+    
+    <div class="flex-container" dir="rtl">
+        <% for(let i = dataAll.length -1; i >=dataAll.length - 2; i--){ %>
+            <div class="contain" onclick="location.href='/p/<%=dataAll[i].param %>'" style="cursor: pointer;">
+                <div class="header-photo" style="position: relative;">
+                    <img src="uploads/<%= dataAll[i].img %>" alt="" srcset="" style="width: 100%; height: 100%;">
+                    <div class="header-details">
+                        <h1 class="header-title"><%= dataAll[i].title.substring(0,25) %></h1>
+                        <p class="header-text" dir="rtl"><%= dataAll[i].description.substring(0,57)%> ...</p>
+                        <p class="header-date"><%= dataAll[i].date %> </p>
+                    </div>
+                </div>
+            </div>
+        <% }%>
+    </div>
+
+    <div class="container-top">
+        <h1 class="top-cont">ناساندنی پڕۆژەکان</h1>
+        <a href="/start" class="viewmore">زیاتر</a>
+    </div>
+    
+    <div class="flex-container" dir="rtl">
+        <% for(let i = 0; i >=0; i--){ %>
+            <div class="contain" onclick="location.href='/p/<%=dataProjects[i].param %>'" style="cursor: pointer;">
+                <div class="header-photo" style="position: relative;">
+                    <img src="uploads/<%= dataProjects[i].img %>" alt="" srcset="" style="width: 100%; height: 100%;">
+                    <div class="header-details">
+                        <h1 class="header-title"><%= dataProjects[i].title.substring(0,25) %></h1>
+                        <p class="header-text" dir="rtl"><%= dataProjects[i].description.substring(0,57)%> ...</p>
+                        <p class="header-date"><%= dataProjects[i].date %> </p>
+                    </div>
+                </div>
+            </div>
+        <% }%>
+    </div>
+
+    <div class="container-top">
+        <h1 class="top-cont">چۆنیەتی دەست پێکردن</h1>
+        <a href="/start" class="viewmore">زیاتر</a>
+    </div>
+    <div class="flex-container" dir="rtl">
+        <% for(let i = 0; i >=0; i--){ %>
+            <div class="contain" onclick="location.href='/p/<%=dataStart[i].param %>'" style="cursor: pointer;">
+                <div class="header-photo" style="position: relative;">
+                    <img src="uploads/<%= dataStart[i].img %>" alt="" srcset="" style="width: 100%; height: 100%;">
+                    <div class="header-details">
+                        <h1 class="header-title"><%= dataStart[i].title.substring(0,25) %></h1>
+                        <p class="header-text" dir="rtl"><%= dataStart[i].description.substring(0,57)%> ...</p>
+                        <p class="header-date"><%= dataStart[i].date %> </p>
+                    </div>
+                </div>
+            </div>
+        <% }%>
+    </div>
+
+    <div class="container-top">
+        <h1 class="top-cont">زانیاری دەربارەی بلۆکچەین</h1>
+        <a href="/start" class="viewmore">زیاتر</a>
+    </div>
+
+    <div class="flex-container" dir="rtl">
+        <% for(let i = 0; i >=0; i--){ %>
+            <div class="contain" onclick="location.href='/p/<%=dataBlockchain[i].param %>'" style="cursor: pointer;">
+                <div class="header-photo" style="position: relative;">
+                    <img src="uploads/<%= dataBlockchain[i].img %>" alt="" srcset="" style="width: 100%; height: 100%;">
+                    <div class="header-details">
+                        <h1 class="header-title"><%= dataBlockchain[i].title.substring(0,25) %></h1>
+                        <p class="header-text" dir="rtl"><%= dataBlockchain[i].description.substring(0,57)%> ...</p>
+                        <p class="header-date"><%= dataBlockchain[i].date %> </p>
+                    </div>
+                </div>
+            </div>
+        <% }%>
+    </div>
+
+    
+
+<%- include('partials/foot') %> 
