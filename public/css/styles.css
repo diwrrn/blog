@@ -99,7 +99,7 @@ button{
   .text-create{
     height: auto !important;
   }
-  .items-drop:hover .dropdown-content {
+  .items-drop:focus .dropdown-content:a {
     display: block;
   }
     
@@ -476,7 +476,9 @@ footer{
 
 .viewpage{
     text-align: right;
+    padding: 0 .5rem;
 }
+
 
 .viewpage-header{
     font-size:4rem;
@@ -609,6 +611,10 @@ footer a:hover{
         transform: translateX(-100%);
         transition: all .3s ease;
     }
+    
+    .items-drop:focus .dropdown-content:a {
+        display: block;
+      }
 
     .nav-two .items{
         padding: 1rem 0;
