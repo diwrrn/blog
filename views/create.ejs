@@ -60,5 +60,10 @@
     <% }) %>
 
 </div>
+<script>
+    const descContent = document.getElementById('desc').value;
+    const textEditor = document.getElementById('desc');
+    textEditor.innerHTML = descContent;
+</script>
 
 <%- include("partials/foot") %> 

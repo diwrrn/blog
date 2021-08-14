@@ -99,7 +99,7 @@ button{
   .text-create{
     height: auto !important;
   }
-  .items-drop:focus .dropdown-content:a {
+  .items-drop:hover .dropdown-content:a {
     display: block;
   }
     
@@ -611,8 +611,8 @@ footer a:hover{
         transform: translateX(-100%);
         transition: all .3s ease;
     }
-    
-    .items-drop:focus .dropdown-content:a {
+
+    .items-drop:focus-within .dropdown-content:a {
         display: block;
       }
 
