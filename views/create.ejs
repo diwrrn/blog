@@ -7,7 +7,7 @@
     </div>
     <div class="form-group-login text-create">
         <label for="desc">Description</label>
-        <textarea type="text" name="des"  id="desc" dir="rtl"></textarea>
+        <textarea type="text" name="des" id="desc" dir="rtl"></textarea>
     </div>
     <div class="form-group-login">
         <input type="file" name="myFile" class="fileForm">
@@ -60,10 +60,5 @@
     <% }) %>
 
 </div>
-<script>
-    const descContent = document.getElementById('desc').value;
-    const textEditor = document.getElementById('desc');
-    textEditor.innerHTML = descContent;
-</script>
 
 <%- include("partials/foot") %> 

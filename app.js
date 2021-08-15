@@ -17,7 +17,9 @@ const app = express();
 // Diween2001
 
 //CONNETCT MONGOOSE TO MONGODB
-mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+// mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/diweenDB", {useNewUrlParser: true});
+
 //SETTING EJS VIEW ENGINE
 app.set('view engine', 'ejs');
 //REQ.BODY.....
@@ -249,6 +251,7 @@ app.post('/edit', (req,res)=>{
             console.log(err)
         }else{
             res.render('edit', {data:dataFound})
+            console.log(dataFound)
         }
     })
 })
@@ -324,7 +327,7 @@ app.get('/all', (req, res)=>{
 
 
 //LISTEN PORT
-app.listen(process.env.PORT, '0.0.0.0', ()=>{
+app.listen(process.env.PORT | 3000, ()=>{
     console.log('Server is live!')
 })
 
