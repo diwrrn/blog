@@ -205,7 +205,7 @@ app.post('/login', (req, res)=>{
 // CREATE POST
 const datee = new Date();
 var dateM = datee.getMonth() + 1;
-var dateD = datee.getDay() + 1;
+var dateD = datee.getDate();
 var dateY = datee.getFullYear();
 
 const dateF = dateD + "/" + dateM + "/" + dateY
