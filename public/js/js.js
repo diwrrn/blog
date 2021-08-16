@@ -29,3 +29,5 @@ if(document.getElementsByClassName('header-text')[0] != null){
 if(document.getElementsByClassName('viewpage-desc')[0] != null){
     document.getElementsByClassName('viewpage-desc')[0].innerHTML = document.getElementsByClassName('viewpage-desc')[0].textContent
 }
+
+CKEDITOR.replace( 'des');
