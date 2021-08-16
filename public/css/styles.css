@@ -215,9 +215,13 @@ button{
 }
 
 .header-text{
-    font-size: 1.6rem;
     text-align: right;
 }
+
+.header-text p {
+    font-size: 2.2rem;
+}
+
 .header-date{
     font-size: 1.5rem;
     position: absolute;
@@ -513,6 +517,12 @@ footer{
 
 .viewpage-desc p{
     font-size: 3.5rem
+}
+.viewpage-desc a:visited,
+.viewpage-desc a:link{
+    font-size: 3.5rem;
+    text-decoration:underline;
+    color: goldenrod;
 }
 
 .toggle{
