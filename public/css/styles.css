@@ -505,12 +505,14 @@ footer{
 }
 
 .viewpage-desc{
-    font-size:2rem;
     width: 100%;
     float: right;
     font-family: 'rudaw', sans-serif;
-
     /* text-align: center; */
+}
+
+.viewpage-desc p{
+    font-size3.5rem
 }
 
 .toggle{
