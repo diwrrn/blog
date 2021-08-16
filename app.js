@@ -19,7 +19,7 @@ const app = express();
 
 //CONNETCT MONGOOSE TO MONGODB
 // mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
-mongoose.connect("mongodb://localhost:27017/diweenDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 //SETTING EJS VIEW ENGINE
 app.set('view engine', 'ejs');
@@ -328,7 +328,7 @@ app.get('/all', (req, res)=>{
 
 
 //LISTEN PORT
-app.listen(process.env.PORT | 3000, ()=>{
+app.listen(process.env.PORT, '0.0.0.0', ()=>{
     console.log('Server is live!')
 })
 
