@@ -15,7 +15,7 @@ var async = require('async');
 const app = express();
 
 // mongodb+srv://diween:<password>@cluster0.iq9bk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// Diween2001
+// Diween2001a
 
 //CONNETCT MONGOOSE TO MONGODB
 // mongoose.connect("mongodb+srv://diween:Diween2001@cluster0.iq9bk.mongodb.net/diweenDB?retryWrites=true&w=majority", {useNewUrlParser: true});
