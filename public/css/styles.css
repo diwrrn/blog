@@ -25,7 +25,7 @@ body{
     margin: 0 30rem;
     background-color: white;
     padding: 0;
-    font-family: 'nrt';
+    font-family: 'nrt'!important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
