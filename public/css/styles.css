@@ -3,10 +3,10 @@
     box-sizing: border-box;
     
 }
-@font-face {
+/* @font-face {
     font-family: 'Peshang_Des_4_Bold';
     src: url('../fonts/Peshang_Des_4_Bold.woff');
-}
+} */
 
 @font-face {
     font-family: 'UniMahanRebin';
