@@ -16,12 +16,16 @@
     font-family: 'rudaw';
     src: url('../fonts/rudawregular2.woff');
 }
+@font-face {
+    font-family: 'nrt';
+    src: url('../fonts/nrt.woff');
+}
 
 body{
     margin: 0 30rem;
     background-color: white;
     padding: 0;
-    font-family: 'Peshang_Des_4_Bold';
+    font-family: 'nrt';
     display: flex;
     flex-direction: column;
     min-height: 100vh;
